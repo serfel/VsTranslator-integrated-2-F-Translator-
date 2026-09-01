@@ -1,0 +1,41 @@
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Id="Visual-Studio-Translator.8fecb095-6cfc-45fa-9b5b-c153e0b78513" Version="2.1.0" Language="en-US" Publisher="Kerwin" />
+    <DisplayName>Visual-Studio-Translator</DisplayName>
+    <Description xml:space="preserve">Translate selected text via Google or Bing or Baidu or Youdao translation</Description>
+    <MoreInfo>https://github.com/Kerwin1202/VsTranslator</MoreInfo>
+    <Icon>Resources\translate_128.png</Icon>
+    <PreviewImage>Resources\previewimage.png</PreviewImage>
+    <Tags>Translate, Microsoft Translator, Bing Translator, Baidu Translator, Youdao Translator</Tags>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0, 18.0)">
+      <ProductArchitecture>amd64</ProductArchitecture>
+    </InstallationTarget>
+    <InstallationTarget Version="[17.0,18.0)" Id="Microsoft.VisualStudio.Pro">
+      <ProductArchitecture>amd64</ProductArchitecture>
+    </InstallationTarget>
+    <InstallationTarget Version="[17.0,18.0)" Id="Microsoft.VisualStudio.Enterprise">
+      <ProductArchitecture>amd64</ProductArchitecture>
+    </InstallationTarget>
+    <InstallationTarget Version="[15.0,17.0)" Id="Microsoft.VisualStudio.Community">
+      <ProductArchitecture>x86</ProductArchitecture>
+    </InstallationTarget>
+    <InstallationTarget Version="[15.0,17.0)" Id="Microsoft.VisualStudio.Pro">
+      <ProductArchitecture>x86</ProductArchitecture>
+    </InstallationTarget>
+    <InstallationTarget Version="[15.0,17.0)" Id="Microsoft.VisualStudio.Enterprise">
+      <ProductArchitecture>x86</ProductArchitecture>
+    </InstallationTarget>
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" Version="[4.5,)" />
+  </Dependencies>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,)" DisplayName="Visual Studio core editor" />
+  </Prerequisites>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="Visual Studio Translator.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Visual Studio Translator.dll" />
+  </Assets>
+</PackageManifest>
