@@ -6,9 +6,6 @@
     public enum TranslateType
     {
         Google = 0x1022,
-        Deepl  = 0x1023,
-        Bing   = 0x1024,
-        Baidu  = 0x1025,
-        Youdao = 0x1026
+        Deepl  = 0x1023
     }
 }

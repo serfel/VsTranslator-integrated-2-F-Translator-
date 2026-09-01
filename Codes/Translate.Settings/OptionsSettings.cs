@@ -52,9 +52,6 @@ namespace Translate.Settings
                         _settings = JsonConvert.DeserializeObject<Settings>(settings);
                         if (_settings.GoogleSettings == null) _settings.GoogleSettings = new TransSettings();
                         if (_settings.DeeplSettings == null) _settings.DeeplSettings = new TransSettings();
-                        if (_settings.BaiduSettings == null) _settings.BaiduSettings = new TransSettings();                        
-                        if (_settings.BingSettings == null) _settings.BingSettings = new TransSettings();
-                        if (_settings.YoudaoSettings == null) _settings.YoudaoSettings = new TransSettings();
                         if (_settings.LetterSpliters == null) _settings.LetterSpliters = new List<Spliter>();
                         if (string.IsNullOrWhiteSpace(_settings.TranslateCachePath) || !Directory.Exists(_settings.TranslateCachePath)) _settings.TranslateCachePath = Settings.TranslateCacheDefaultPath;
                     }

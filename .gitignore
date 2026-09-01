@@ -1,47 +1,68 @@
-/VsBackground/obj
-/VsBackground/bin
-/packages
-*.suo
-/VsTranslator/obj
-/VsTranslator/bin
-/VsTranslatorTest/obj/Debug
-/VsTranslatorTest/bin/Debug
-*.user
-/temp/ConsoleApplication2/ConsoleApplication2/obj
-/temp/ConsoleApplication2/ConsoleApplication3/obj
-/VsTranslator/*.user
-/VSIXProject1
-/MenuCommandTest
-/ColumnGuides
-/VsTranslatorTest/obj/Release
-/*.DotSettings
-/VsTranslatorTest/obj
-/VsTranslatorTest/bin
-/VsComment/obj/Debug
-/VsComment/bin/Debug
-/VsComment.Entities/obj/Debug
-/VsComment.Entities/bin/Debug
-/VsComment.Tests/obj/Debug
-/VsComment.Tests/bin/Debug
-/Translate.Core/obj
-/Translate.Core/bin
-/Translate Client/bin
-/Translate Client/obj
-/Translate.Settings/obj
-/Translate.Settings/bin
-/Translate.Settings/obj/Debug
-/Translate.Settings/bin/Debug
-/TranslateService/obj
-/TranslateService/bin
-/VsComment/obj
-/VsComment/bin
-/VsComment.Entities/bin
-/VsComment.Entities/obj
-/VsComment.Tests/obj
-/VsComment.Tests/bin
-/.vs
-packages
-TestResults
-obj
-bin
-Codes/.vs/
+```
+# Compiled and build artifacts
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.a
+*.out
+
+# Dependencies
+node_modules/
+venv/
+.venv/
+__pycache__/
+.mypy_cache/
+.pytest_cache/
+target/
+.gradle/
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Editors
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Coverage
+coverage/
+htmlcov/
+.coverage
+
+# Compressed files
+*.zip
+*.gz
+*.tar
+*.tgz
+*.bz2
+*.xz
+*.7z
+*.rar
+*.zst
+*.lz4
+*.lzh
+*.cab
+*.arj
+*.rpm
+*.deb
+*.Z
+*.lz
+*.lzo
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tar.zst
+```

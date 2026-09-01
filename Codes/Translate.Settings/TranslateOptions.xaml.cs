@@ -5,12 +5,9 @@ using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Forms;
-using Translate.Core.Translator.Baidu;
-using Translate.Core.Translator.Bing;
 using Translate.Core.Translator.Entities;
 using Translate.Core.Translator.Google;
 using Translate.Core.Translator.Deepl;
-using Translate.Core.Translator.Youdao;
 using MessageBox = System.Windows.Forms.MessageBox;
 
 namespace Translate.Settings
@@ -37,16 +34,7 @@ namespace Translate.Settings
 
             cbService.Items.Add(GoogleTranslator.GetName());
             cbService.Items.Add(DeeplTranslator.GetName());
-            cbService.Items.Add(BingTranslator.GetName());
-            cbService.Items.Add(BaiduTranslator.GetName());
-            cbService.Items.Add(YoudaoTranslator.GetName());
         }
-
-        private void lblBaidu_OnClick(object sender, RoutedEventArgs e)
-        {
-            Process.Start("http://api.fanyi.baidu.com/api/trans/product/index");
-        }
-
 
         private void btnSave_OnClick(object sender, RoutedEventArgs e)
         {
@@ -193,18 +181,6 @@ namespace Translate.Settings
                     AppendLang2Control(DeeplTranslator.GetSourceLanguages(), DeeplTranslator.GetTargetLanguages());
                     SetLanguageSelectedIndex(Settings.DeeplSettings);
                     break;
-                case 2:
-                    AppendLang2Control(BingTranslator.GetSourceLanguages(), BingTranslator.GetTargetLanguages());
-                    SetLanguageSelectedIndex(Settings.BingSettings);
-                    break;
-                case 3:
-                    AppendLang2Control(BaiduTranslator.GetSourceLanguages(), BaiduTranslator.GetTargetLanguages());
-                    SetLanguageSelectedIndex(Settings.BaiduSettings);
-                    break;
-                case 4:
-                    AppendLang2Control(YoudaoTranslator.GetSourceLanguages(), YoudaoTranslator.GetTargetLanguages());
-                    SetLanguageSelectedIndex(Settings.YoudaoSettings);
-                    break;
             }
         }
 
@@ -274,15 +250,6 @@ namespace Translate.Settings
                     break;
                 case 1:
                     transSettings = Settings.DeeplSettings;
-                    break;
-                case 2:
-                    transSettings = Settings.BingSettings;
-                    break;
-                case 3:
-                    transSettings = Settings.BaiduSettings;
-                    break;
-                case 4:
-                    transSettings = Settings.YoudaoSettings;
                     break;
             }
             return transSettings;
