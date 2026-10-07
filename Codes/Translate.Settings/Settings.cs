@@ -7,14 +7,11 @@ namespace Translate.Settings
     public class Settings
     {
         /// <summary>
-        /// The index of translate service (Google, Bing, Baidu, Youdao)
+        /// The index of translate service (Google, Deepl)
         /// </summary>
         public int ServiceIndex { get; set; }
         public TransSettings GoogleSettings { get; set; }
         public TransSettings DeeplSettings  { get; set; }
-        public TransSettings BingSettings { get; set; }
-        public TransSettings BaiduSettings { get; set; }
-        public TransSettings YoudaoSettings { get; set; }
         public List<Spliter> LetterSpliters { get; set; }
 
         private string _translateCachePath;
@@ -84,33 +81,6 @@ namespace Translate.Settings
                     SourceLanguageIndex = 0,
                     TargetLanguageIndex = defaultChinese ? 6 : 12,
                 },
-                BaiduSettings = new TransSettings()
-                {
-                    AppClient = new AppClient() { AppKey = "", ClientSecret = "" },
-                    LastLanguageIndex = 2,
-                    SourceLanguageIndex = 0,
-                    TargetLanguageIndex = defaultChinese ? 0 : 2,
-                },
-                BingSettings = new TransSettings()
-                {
-                    AppClient = new AppClient()
-                    {
-                        AppKey = "",
-                        ClientSecret = ""
-                    },
-                    LastLanguageIndex = 12,
-                    SourceLanguageIndex = 0,
-                    TargetLanguageIndex = defaultChinese ? 5 : 12,
-                }
-                    ,
-                YoudaoSettings = new TransSettings()
-                {
-                    AppClient = new AppClient() { AppKey = "", ClientSecret = "" },
-                    LastLanguageIndex = 1,
-                    SourceLanguageIndex = 0,
-                    TargetLanguageIndex = defaultChinese ? 0 : 1,
-                },
-                
                 LetterSpliters = new List<Spliter>()
                 {
                     new Spliter()

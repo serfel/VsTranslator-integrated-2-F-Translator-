@@ -7,9 +7,6 @@
     {
         public const uint GoogleTranslate = 0x1022;
         public const uint DeeplTranslate = 0x1023;
-        public const uint BingTranslate = 0x1024;
-        public const uint BaiduTranslate = 0x1025;
-        public const uint YoudaoTranslate = 0x1026;
         public const uint TranslateOptions = 0x1027;
         public const uint TranslateClient = 0x1028;
 
